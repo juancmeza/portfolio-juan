@@ -1,5 +1,10 @@
 .App {
+  font-family: "Metal Mania";
   text-align: center;
+  background: linear-gradient(to right, #415c7c, #0b274b);
+  min-height: 100vh;
+  color: rgb(212, 222, 230);
+  position: relative;
 }
 
 .App-logo {
@@ -7,21 +12,12 @@
   pointer-events: none;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -35,4 +31,73 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#About2 {
+  background-image: url("images/HeaderJuanTwo.jpeg");
+  background-color: rgba(0, 0, 0, .6);
+  background-blend-mode: multiply;
+  width: 100%;
+  min-height: 900px;
+  background-size: cover;
+  background-position: center bottom;
+  box-shadow: 0 5px 10px rgb(42, 41, 41);
+}
+
+#About {
+  min-height: 300px;
+  width: 80%;
+  border-width: 0.3px 0.3px 0.3px 0.3px;
+  border-style: solid;
+  border-color: rgb(175, 38, 38);
+  border-radius: 2%;
+  margin: auto;
+}
+#Projects {
+  min-height: 900px;
+}
+#Blogs {
+  min-height: 900px;
+}
+#Contact {
+  min-height: 900px;
+}
+
+#AboutContainer {
+  
+}
+
+.navbar {
+  opacity: 0.7;
+  box-shadow: 0 5px 10px rgb(42, 41, 41);
+  position: sticky !important;
+  top: 0;
+  align-items: center !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-items: flex-end !important;
+  justify-content: flex-end !important;
+  width: auto !important;
+  /* margin: auto !important; */
+  background: #0b274b !important;
+}
+
+:root {
+  --pcol: #104570 !important;
+  --scol: red !important;
+  --tspeed: 0s !important;
+  --fgrad: #0b274b !important;
+  --sgrad: #0b274b !important;
+  --rm-font-size: 0.975rem !important;
+  --sm-font-size: 0.8rem !important;
+}
+
+#Title {
+  font-size: x-large;
+  position: fixed;
+  top: 0;
+  left: 10px;
+  color: rgba(255, 0, 0, 0.705);
+  font-weight: 200;
+  z-index: 9999;
 }

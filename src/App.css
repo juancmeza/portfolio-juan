@@ -1,7 +1,7 @@
 .App {
   font-family: "Metal Mania";
   text-align: center;
-  background: linear-gradient(to right, #415c7c, #0b274b);
+  background: linear-gradient(to right, #20436d, #0b274b);
   min-height: 100vh;
   color: rgb(212, 222, 230);
   position: relative;
@@ -63,9 +63,6 @@
   min-height: 900px;
 }
 
-#AboutContainer {
-  
-}
 
 .navbar {
   opacity: 0.7;
@@ -84,7 +81,7 @@
 
 :root {
   --pcol: #104570 !important;
-  --scol: red !important;
+  --scol: rgb(38, 204, 196) !important;
   --tspeed: 0s !important;
   --fgrad: #0b274b !important;
   --sgrad: #0b274b !important;
@@ -97,7 +94,7 @@
   position: fixed;
   top: 0;
   left: 10px;
-  color: rgba(255, 0, 0, 0.705);
+  color: rgb(38, 204, 196, 0.75) !important;
   font-weight: 200;
   z-index: 9999;
 }

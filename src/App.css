@@ -54,18 +54,21 @@
   border-radius: 0.5em;
   margin: auto;
   background-color: rgba(0, 0, 0, .5);
-  padding: 10px 10px 10px 10px;
-}
-#Projects {
-  min-height: 900px;
-}
-#Blogs {
-  min-height: 900px;
-}
-#Contact {
-  min-height: 900px;
+  padding: 10px 5vw 10px 5vw;
 }
 
+#Projects {
+  min-height: 100vh;
+  background: linear-gradient(to left, #051636, #3b79ac);
+}
+
+#Blogs {
+  min-height: 100vh;
+}
+
+#Contact {
+  min-height: 100vh;
+}
 
 .navbar {
   opacity: 0.5;
@@ -100,4 +103,16 @@
   color: rgba(36, 155, 190, 0.7) !important;
   font-weight: 200;
   z-index: 9999;
+}
+
+.GG-Background {
+  background-image: url("images/GG-Background-Desktop.jpeg");
+  background-attachment: fixed;
+  /* background-color: rgba(0, 0, 0, .6);
+  background-blend-mode: multiply; */
+  width: 100%;
+  /* min-height: 100vh; */
+  background-size: cover;
+  background-position: center top;
+  box-shadow: 0 5px 10px rgb(42, 41, 41);
 }

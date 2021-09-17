@@ -15,9 +15,10 @@ function App() {
       <Nav></Nav>
       <About></About>
       <Projects></Projects>
-      <Blogs></Blogs>
+      <div className="GG-Background">
+        <Blogs></Blogs>
+      </div>
       <Contact></Contact>
-
     </div>
   );
 }

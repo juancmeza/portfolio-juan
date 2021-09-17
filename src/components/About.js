@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import TypeWriter from "react-typewriter";
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 
 function About() {
@@ -30,11 +31,12 @@ function About() {
                     <span style={{color: '#ebb216'}}> JUAN CARLOS MEZA </span>
                     and I'm a 
                     <span style={{color: '#ebb216'}}> JUNIOR FULL-STACK WEB DEVELOPER </span>
-                    currently working at AAK-TELESCIENCE, INC.
+                    based in the San Francisco Bay Area currently working at AAK-TELESCIENCE, INC.
                 </div>
                 :
                 null
             }
+            <InstagramIcon fontSize="large"></InstagramIcon>
         </div>
     </div>
   );

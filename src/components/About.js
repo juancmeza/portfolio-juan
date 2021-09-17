@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import TypeWriter from "react-typewriter";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import IconButton from '@material-ui/core/IconButton';
 
 
 function About() {
@@ -27,16 +30,28 @@ function About() {
             </TypeWriter>
             {displayAboutParagraph ? 
                 <div id="AboutParagraph">
-                    My name is 
-                    <span style={{color: '#ebb216'}}> JUAN CARLOS MEZA </span>
-                    and I'm a 
-                    <span style={{color: '#ebb216'}}> JUNIOR FULL-STACK WEB DEVELOPER </span>
-                    based in the San Francisco Bay Area currently working at AAK-TELESCIENCE, INC.
+                    <div>
+                        My name is 
+                        <span style={{color: '#ebb216'}}> JUAN CARLOS MEZA </span>
+                        and I'm a 
+                        <span style={{color: '#ebb216'}}> JUNIOR FULL-STACK WEB DEVELOPER </span>
+                        based in the San Francisco Bay Area currently working at AAK-TELESCIENCE, INC.
+                    </div>
+                    <div className="SocialMedia">
+                        <IconButton>
+                            <LinkedInIcon fontSize="large"></LinkedInIcon>
+                        </IconButton>
+                        <IconButton>
+                            <GitHubIcon fontSize="large"></GitHubIcon>
+                        </IconButton>
+                        <IconButton>
+                            <InstagramIcon fontSize="large"></InstagramIcon>
+                        </IconButton>
+                    </div>
                 </div>
                 :
                 null
             }
-            <InstagramIcon fontSize="large"></InstagramIcon>
         </div>
     </div>
   );

@@ -55,6 +55,7 @@
   margin: auto;
   background-color: rgba(0, 0, 0, .5);
   padding: 10px 5vw 10px 5vw;
+  position: relative;
 }
 
 #Projects {
@@ -115,4 +116,12 @@
   background-size: cover;
   background-position: center top;
   box-shadow: 0 5px 10px rgb(42, 41, 41);
+}
+
+.SocialMedia {
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+  color: rgb(212, 222, 230, 0.9);
 }

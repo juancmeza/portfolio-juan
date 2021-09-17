@@ -19,7 +19,7 @@ class Nav extends Component {
 
     return (
       <div className="navbar">
-        <Navbar 
+        <Navbar
           // logo={logo}
           loader={<Loader type="Puff" color="#C0C0C0" height={25} width={25} />}
           isLoading={this.state.isLoading}

@@ -1,11 +1,14 @@
 .App {
   font-family: "Metal Mania";
   text-align: center;
-  background: linear-gradient(to right, #20436d, #0b274b);
+  background: linear-gradient(to left, #051636, #3b79ac);
   min-height: 100vh;
-  color: rgb(212, 222, 230);
+  color: rgb(212, 222, 230, 0.9);
   position: relative;
 }
+
+/* 20436d, 0b274b 3b79ac*/
+/* #051636, #3b79ac */
 
 .App-logo {
   height: 40vmin;
@@ -33,25 +36,25 @@
   }
 }
 
-#About2 {
+#AboutContainer {
   background-image: url("images/HeaderJuanTwo.jpeg");
-  background-color: rgba(0, 0, 0, .6);
-  background-blend-mode: multiply;
+  /* background-color: rgba(0, 0, 0, .6);
+  background-blend-mode: multiply; */
   width: 100%;
-  min-height: 900px;
+  min-height: 100vh;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center top;
   box-shadow: 0 5px 10px rgb(42, 41, 41);
 }
 
 #About {
-  min-height: 300px;
-  width: 80%;
-  border-width: 0.3px 0.3px 0.3px 0.3px;
-  border-style: solid;
-  border-color: rgb(175, 38, 38);
-  border-radius: 2%;
+  min-height: 50vh;
+  width: 80vw;
+  font-size: xx-large;
+  border-radius: 0.5em;
   margin: auto;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 10px 10px 10px 10px;
 }
 #Projects {
   min-height: 900px;
@@ -65,26 +68,26 @@
 
 
 .navbar {
-  opacity: 0.7;
+  opacity: 0.5;
   box-shadow: 0 5px 10px rgb(42, 41, 41);
   position: sticky !important;
   top: 0;
-  align-items: center !important;
+  /* align-items: center !important; */
   display: flex !important;
-  flex-direction: row !important;
-  justify-items: flex-end !important;
+  /* flex-direction: row !important; */
+  /* justify-items: flex-end !important; */
   justify-content: flex-end !important;
-  width: auto !important;
+  /* width: auto !important; */
   /* margin: auto !important; */
-  background: #0b274b !important;
+  background: rgba(39, 38, 38, 1) !important;
 }
 
 :root {
-  --pcol: #104570 !important;
-  --scol: rgb(38, 204, 196) !important;
+  --pcol: rgb(3, 12, 19) !important;
+  --scol: rgb(36, 155, 190) !important;
   --tspeed: 0s !important;
-  --fgrad: #0b274b !important;
-  --sgrad: #0b274b !important;
+  --fgrad: rgba(39, 38, 38, 1) !important;
+  --sgrad: rgb(39, 38, 38) !important;
   --rm-font-size: 0.975rem !important;
   --sm-font-size: 0.8rem !important;
 }
@@ -94,7 +97,7 @@
   position: fixed;
   top: 0;
   left: 10px;
-  color: rgb(38, 204, 196, 0.75) !important;
+  color: rgba(36, 155, 190, 0.7) !important;
   font-weight: 200;
   z-index: 9999;
 }

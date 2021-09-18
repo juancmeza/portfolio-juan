@@ -2,7 +2,7 @@ import './App.css';
 import React, {Component} from 'react';
 import './App.css';
 import Nav from './components/Nav';
-import About from './components/About';
+import Home from './components/Home';
 import Projects from './components/Projects';
 import Publications from './components/Publications';
 import Contact from './components/Contact';
@@ -13,11 +13,9 @@ function App() {
     <div className="App">
       <h1 id="Title">Juan Carlos Meza</h1>
       <Nav></Nav>
-      <About></About>
+      <Home></Home>
       <Projects></Projects>
-      <div className="GG-Background">
-        <Publications></Publications>
-      </div>
+      <Publications></Publications>
       <Contact></Contact>
     </div>
   );

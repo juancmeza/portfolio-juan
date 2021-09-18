@@ -36,8 +36,8 @@
   }
 }
 
-#AboutContainer {
-  background-image: url("images/Marina.jpeg");
+#HomeContainer {
+  background-image: url("images/HeaderJuanTwo.jpeg");
   /* background-color: rgba(0, 0, 0, .6);
   background-blend-mode: multiply; */
   width: 100%;
@@ -47,7 +47,7 @@
   box-shadow: 0 5px 10px rgb(42, 41, 41);
 }
 
-#About {
+#Home {
   min-height: 50vh;
   width: 75vw;
   font-size: xx-large;
@@ -68,6 +68,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: url("images/Marina.jpeg");
+  background-attachment: fixed;
+  width: 100%;
+  background-size: cover;
+  background-position: center top;
+  box-shadow: 0 5px 10px rgb(42, 41, 41);
 }
 
 #Contact {
@@ -111,18 +117,6 @@
   opacity: 1;
 }
 
-.GG-Background {
-  background-image: url("images/HeaderJuanTwo.jpeg");
-  background-attachment: fixed;
-  /* background-color: rgba(0, 0, 0, .6);
-  background-blend-mode: multiply; */
-  width: 100%;
-  /* min-height: 100vh; */
-  background-size: cover;
-  background-position: center top;
-  box-shadow: 0 5px 10px rgb(42, 41, 41);
-}
-
 .SocialMedia {
   position: absolute;
   bottom: 10vh;
@@ -136,11 +130,11 @@
   font-size: xx-large;
 }
 
-.PublicationsCards {
+.PublicationsCardsContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* align-items: center; */
+  align-items: center;
   margin: auto;
   width: 90%;
 }
@@ -148,7 +142,7 @@
 #Carousel {
   background-image: url("images/Carousel.jpeg");
   min-width: 26%;
-  min-height: 500px;
+  height: 65vh;
   background-size: cover;
   background-position: center top;
   border-radius: 0.7em;
@@ -161,7 +155,7 @@
 #Recursion {
   background-image: url("images/Recursion.jpeg");
   min-width: 26%;
-  min-height: 500px;
+  height: 65vh;
   background-size: cover;
   background-position: center top;
   border-radius: 0.7em;
@@ -174,7 +168,7 @@
 #Hooks {
   background-image: url("images/Hooks.jpeg");
   min-width: 26%;
-  min-height: 500px;
+  height: 65vh;
   background-size: cover;
   background-position: center top;
   border-radius: 0.7em;
@@ -184,8 +178,14 @@
   justify-content: center;
 }
 
-a.overlay { 
+/* a.overlay { 
   width: 100%; 
   height:100%; 
   position: absolute; 
+} */
+
+.LinkIcon {
+  position: absolute;
+  top: 15px;
+  right: 0;
 }

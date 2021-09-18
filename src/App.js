@@ -4,7 +4,7 @@ import './App.css';
 import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
-import Blogs from './components/Blogs';
+import Publications from './components/Publications';
 import Contact from './components/Contact';
 
 
@@ -16,7 +16,7 @@ function App() {
       <About></About>
       <Projects></Projects>
       <div className="GG-Background">
-        <Blogs></Blogs>
+        <Publications></Publications>
       </div>
       <Contact></Contact>
     </div>

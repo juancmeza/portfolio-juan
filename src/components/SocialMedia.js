@@ -29,15 +29,21 @@ function About() {
 
   return (
     <div>
-        <IconButton className={styles.action}>
-            <LinkedInIcon fontSize="large"></LinkedInIcon>
-        </IconButton>
-        <IconButton className={styles.action}>
-            <GitHubIcon fontSize="large"></GitHubIcon>
-        </IconButton>
-        <IconButton className={styles.action}>
-            <InstagramIcon fontSize="large"></InstagramIcon>
-        </IconButton>
+        <a href="https://www.linkedin.com/in/juan-meza-36065974/">
+            <IconButton className={styles.action}>
+                <LinkedInIcon fontSize="large"></LinkedInIcon>
+            </IconButton>
+        </a>
+        <a href="https://github.com/juancmeza">
+            <IconButton className={styles.action}>
+                <GitHubIcon fontSize="large"></GitHubIcon>
+            </IconButton>
+        </a>
+        <a href="https://www.instagram.com/juanforthebookz/">
+            <IconButton className={styles.action}>
+                <InstagramIcon fontSize="large"></InstagramIcon>
+            </IconButton>
+        </a>
     </div>
   );
 }

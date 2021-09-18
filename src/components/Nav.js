@@ -42,11 +42,11 @@ class Nav extends Component {
               },
             },
             {
-              title: "Blogs",
+              title: "Publications",
               icon: faNewspaper,
               isAuth: true,
               onClick: () => { 
-                window.location.href = "#Blogs";
+                window.location.href = "#Publications";
               },
             },
             {

@@ -1,9 +1,5 @@
 import React, {useState} from 'react';
 import TypeWriter from "react-typewriter";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import IconButton from '@material-ui/core/IconButton';
 import SocialMedia from './SocialMedia'
 
 
@@ -11,12 +7,6 @@ function About() {
 
 //---------------------------------------- Set State -------------------------------------------
     const [displayAboutParagraph, setDisplayAboutParagraph] = useState(false)
-    // const [renderCounter, setRenderCounter] = useState(0)
-
-    // const displayAboutParagraph = () => {
-    //     addTagToStudent(e, id, newTag)
-    //     setNewTag('')
-    //     }
 
   return (
     <div id="AboutContainer">

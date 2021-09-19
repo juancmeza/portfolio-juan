@@ -58,6 +58,21 @@
   position: relative;
 }
 
+#AboutContainer {
+  width: 100%;
+  min-height: 100vh;
+  box-shadow: 0 5px 10px rgb(42, 41, 41);
+}
+
+#About {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+
 #Projects {
   min-height: 100vh;
   background: linear-gradient(to left, #051636, #3b79ac);
@@ -139,8 +154,7 @@
   width: 90%;
 }
 
-#Carousel {
-  background-image: url("images/Carousel.jpeg");
+.PublicationsCard {
   min-width: 26%;
   height: 65vh;
   background-size: cover;
@@ -150,32 +164,18 @@
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+#Carousel {
+  background-image: url("images/Carousel.jpeg");
 }
 
 #Recursion {
   background-image: url("images/Recursion.jpeg");
-  min-width: 26%;
-  height: 65vh;
-  background-size: cover;
-  background-position: center top;
-  border-radius: 0.7em;
-  opacity: 0.9;
-  position: relative;
-  display: flex;
-  justify-content: center;
 }
 
 #Hooks {
   background-image: url("images/Hooks.jpeg");
-  min-width: 26%;
-  height: 65vh;
-  background-size: cover;
-  background-position: center top;
-  border-radius: 0.7em;
-  opacity: 0.9;
-  position: relative;
-  display: flex;
-  justify-content: center;
 }
 
 /* a.overlay { 
@@ -188,4 +188,40 @@
   position: absolute;
   top: 15px;
   right: 0;
+}
+
+#_2iAdU {
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end !important;
+}
+
+/* Mobile devices ----------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-device-width: 480px) {
+
+  .navbar {
+    justify-content: center !important;
+  }
+  #HomeContainer {
+    background-image: url("images/Marina.jpeg");
+  }
+
+  #Home {
+    font-size: 3.5vh;
+    min-height: 60vh;
+  }
+
+  #Publications {
+    background-image: url("images/GG-Background.jpeg");
+  }
+
+  .PublicationsCardsContainer {
+    flex-direction: column;
+  }
+
+  .PublicationsCard {
+    min-width: 86%;
+    margin-bottom: 20px;
+  }
 }

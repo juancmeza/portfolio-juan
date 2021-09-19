@@ -28,10 +28,10 @@ function Publications() {
 
   return (
     <div id="Publications">
-        <br></br>
+        <div style={{height: '10vh'}}></div>
         <h2 className="ComponentTitle" style={{color: 'rgb(212, 222, 230, 0.9)'}}>Publications</h2>
         <div className="PublicationsCardsContainer">
-          <div id="Carousel">
+          <div id="Carousel" className="PublicationsCard">
             <div className="LinkIcon">
               <a href="https://medium.com/nerd-for-tech/use-an-auto-rotating-carousel-to-deliver-your-apps-elevator-pitch-923d94f7130d">
                 <IconButton className={styles.action}>
@@ -40,7 +40,7 @@ function Publications() {
               </a>
             </div>
           </div>
-          <div id="Recursion">
+          <div id="Recursion" className="PublicationsCard">
             <div className="LinkIcon">
               <a href="https://juancarlosmezadelatorre.medium.com/warming-up-to-recursive-algorithms-5b27ed241f5">
                 <IconButton className={styles.action}>
@@ -49,7 +49,7 @@ function Publications() {
               </a>
             </div>
           </div>
-          <div id="Hooks">
+          <div id="Hooks" className="PublicationsCard">
             <div className="LinkIcon">
               <a href="https://juancarlosmezadelatorre.medium.com/react-from-class-components-to-hooks-4cc787290262">
                 <IconButton className={styles.action}>

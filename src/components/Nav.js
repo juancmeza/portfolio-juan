@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "reactjs-navbar";
 import Loader from "react-loader-spinner";
 import {
+  faHome,  
   faUserCircle,
   faNewspaper,
   faHammer,
@@ -24,6 +25,15 @@ class Nav extends Component {
           loader={<Loader type="Puff" color="#C0C0C0" height={25} width={25} />}
           isLoading={this.state.isLoading}
           menuItems={[
+            {
+                title: "Home",
+                icon: faHome,
+                path:"/",
+                isAuth: true,
+                onClick: () => {
+                  window.location.href = "#HomeContainer";
+                },
+              },
             {
               title: "About",
               icon: faUserCircle,

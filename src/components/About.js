@@ -9,7 +9,7 @@ function About() {
   return (
     <div id="AboutContainer">
         <div style={{height: '5vh'}}></div>
-        <h2 className="ComponentTitle">About Me</h2>
+        <h2 className="ComponentTitle FontGradient">About Me</h2>
         <div id="About">
             <div id="About1">
                 <ul>
@@ -25,7 +25,7 @@ function About() {
                     <li>
                         7 years later, I knew it was time to seek new challenges and after some exploration,
                         I decided to enroll in Flatiron's Software Engineering bootcamp, where I learned
-                        most of the skills below.
+                        RESTful APIs, agile development, and most of the skills below.
                     </li>
                 </ul>
             </div>
@@ -37,15 +37,26 @@ function About() {
                     <li>Python</li>
                     <li>SQL</li>
                     <li>PHP</li>
-                    <li>R</li>
+                    {/* <li>R</li> */}
                     <li>HTML5</li>
                     <li>CSS3</li>
                 </div>
                 <div className="TechnicalSkills">
                     <h3>Frameworks</h3>
+                    <li>React</li>
+                    <li>Ruby on Rails</li>
+                    <li>Bootstrap</li>
+                    <li>Material UI</li>
+                    <li>Semantic UI</li>
                 </div>
                 <div className="TechnicalSkills">
                     <h3>Other</h3>
+                    <li>RSpec</li>
+                    <li>Jest</li>
+                    <li>Heroku</li>
+                    <li>Firebase</li>
+                    <li>Netlify</li>
+                    <li>Postman</li>
                 </div>
             </div>
         </div>

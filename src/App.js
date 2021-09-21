@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="App">
-      <h1 id="Title">Juan Carlos Meza</h1>
+      <h1 id="Title" className="FontGradient">Juan Carlos Meza</h1>
       <Nav></Nav>
       <Home></Home>
       <About></About>

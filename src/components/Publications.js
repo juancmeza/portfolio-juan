@@ -28,8 +28,8 @@ function Publications() {
 
   return (
     <div id="Publications">
-        <div style={{height: '10vh'}}></div>
-        <h2 className="ComponentTitle" style={{color: 'rgb(212, 222, 230, 0.9)'}}>Publications</h2>
+        <div style={{height: '5vh'}}></div>
+        <h2 className="ComponentTitle" style={{color: 'black'}}>Publications</h2>
         <div className="PublicationsCardsContainer">
           <div id="Carousel" className="PublicationsCard">
             <div className="LinkIcon">

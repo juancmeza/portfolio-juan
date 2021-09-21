@@ -14,7 +14,7 @@ function Home() {
         <div id="Home">
             <TypeWriter typing={0.5} onTypingEnd={() => setDisplayHomeParagraph(true)}>
                 Hello
-                <div style={{color: '#3b79ac'}}> World!!!</div>
+                <div className="FontGradient"> World!!!</div>
             </TypeWriter>
             <div style={{height: '5vh'}}></div>
             {displayHomeParagraph ? 

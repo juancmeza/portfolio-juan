@@ -1,7 +1,7 @@
 .App {
   font-family: "Metal Mania";
   text-align: center;
-  background: linear-gradient(to left, #051636, #3b79ac);
+  background: linear-gradient(to left, #304369, #051636);
   min-height: 100vh;
   color: rgb(212, 222, 230, 0.9);
   position: relative;
@@ -44,7 +44,7 @@
   min-height: 100vh;
   background-size: cover;
   background-position: center top;
-  box-shadow: 0 5px 10px rgb(42, 41, 41);
+  /* box-shadow: 0 5px 10px rgb(42, 41, 41); */
 }
 
 #Home {
@@ -61,21 +61,85 @@
 #AboutContainer {
   width: 100%;
   min-height: 100vh;
-  box-shadow: 0 5px 10px rgb(42, 41, 41);
+  /* box-shadow: 0 5px 10px rgb(42, 41, 41); */
 }
 
 #About {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content:space-around;
   align-items: center;
   width: 85%;
   margin: auto;
+  min-height: 100vh;
+}
+
+#About1 {
+  min-height: 25vh;
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.7em;
+  box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.5);
+  padding: 4vh 2vw 2vh 4vh;
+  margin-left: -35vw;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  align-items: center;
+  text-justify:distribute-all-lines;
+}
+
+#About1 li {
+  background: linear-gradient(to right, #a0d0ec, #376ec0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: list-item;
+  font-size: x-large;
+}
+
+ul{ text-align:center;}
+li{ display:inline-block;padding:15px;}
+
+#About2 {
+  min-height: 50vh;
+  min-width: 75vw;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 0.7em;
+  margin-right: -27vw;
+  margin-top: 5vh;
+  padding-right: 3vw;
+  padding-bottom: 1vh;
+  box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.TechnicalSkills {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #a0d0ec, #376ec0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-size: x-large;
+}
+
+.TechnicalSkills li {
+  line-height: 8px;
+  margin: 0;
 }
 
 #Projects {
   min-height: 100vh;
-  background: linear-gradient(to left, #051636, #3b79ac);
+  /* background: linear-gradient(to left, #051636, #3b79ac); */
 }
 
 #Publications {
@@ -88,7 +152,7 @@
   width: 100%;
   background-size: cover;
   background-position: center top;
-  box-shadow: 0 5px 10px rgb(42, 41, 41);
+  /* box-shadow: 0 5px 10px rgb(42, 41, 41); */
 }
 
 #Contact {
@@ -96,7 +160,7 @@
 }
 
 .navbar {
-  opacity: 0.7;
+  opacity: 0.8;
   box-shadow: 0 5px 10px rgb(42, 41, 41);
   position: sticky !important;
   top: 0;
@@ -107,13 +171,13 @@
   justify-content: flex-end !important;
   /* width: auto !important; */
   /* margin: auto !important; */
-  background: rgb(41, 49, 56) !important;
+  background: rgb(3, 5, 7) !important;
   z-index: 9998;
 }
 
 :root {
   --pcol: rgb(3, 12, 19) !important;
-  --scol: rgb(36, 155, 190) !important;
+  --scol: rgb(45, 138, 214) !important;
   --tspeed: 0s !important;
   --fgrad: rgba(41, 49, 56, 0.95) !important;
   --sgrad: rgb(41, 49, 56, 0.95) !important;
@@ -126,7 +190,7 @@
   position: fixed;
   top: 0;
   left: 10px;
-  color: rgba(36, 155, 190) !important;
+  color: rgb(45, 138, 214) !important;
   font-weight: 200;
   z-index: 9999;
   opacity: 1;
@@ -143,6 +207,13 @@
 .ComponentTitle {
   color: rgb(212, 222, 230, 0.9);
   font-size: xx-large;
+  background: linear-gradient(to right, #a0d0ec, #376ec0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block
 }
 
 .PublicationsCardsContainer {

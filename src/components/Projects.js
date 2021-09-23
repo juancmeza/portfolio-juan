@@ -1,90 +1,101 @@
-import React from 'react';
 
-function Projects() {
-  return (
-    <div id="Projects">
-        <div style={{height: '5vh'}}></div>
-        <h2 className="ComponentTitle FontGradient">Projects</h2>
-    </div>
-  );
+import React, {Component} from 'react';
+import ProjectCard from './ProjectCard';
+import IconButton from '@material-ui/core/IconButton';
+import NavigateNextRoundedIcon from '@material-ui/icons/NavigateNextRounded';
+import NavigateBeforeRoundedIcon from '@material-ui/icons/NavigateBeforeRounded';
+import Hooks from './images/Hooks.jpeg';
+import Carousel from './images/Carousel.jpeg';
+import Recursion from './images/Recursion.jpeg';
+
+
+class Projects extends Component {
+
+  state ={
+    slideNumber: 0,
+  }
+
+  componentDidMount() {
+    this.kickOffCarousel()
+  }
+
+  moveToNextSlide = () => {
+    this.state.slideNumber === 2 ?
+    this.resetCarousel()
+    :
+    this.setState(prevstate => ({ slideNumber: prevstate.slideNumber + 1}))
+  }
+
+  moveToPreviousSlide = () => {
+    this.state.slideNumber === 0 ?
+    this.setState({slideNumber: 2})
+    :
+    this.setState(prevstate => ({ slideNumber: prevstate.slideNumber - 1}))
+  }
+
+  kickOffCarousel = () => {
+      setInterval(this.moveToNextSlide, 4500)
+  }
+
+  resetCarousel = () => {
+    clearInterval(this.kickOffCarousel)
+    this.setState({slideNumber: 0})
+  }
+
+
+  slides = [
+    // {image: this.props.data.about_image, text:`Thanks for stopping by! We are a small, full service, family-
+    // owned wood business based in Fairfax, California. We specialize in
+    // custom, reclaimed wood projects from sustainable, local sources. It is a
+    // blessing to live in Northern California, with such a wide variety of species.`},
+    // {image: this.props.project_pic, text:`We also specialize in esoteric species from around the world. All of our
+    // wood is one hundred percent reclaimed, and handpicked by our
+    // specialists; only the top twenty percent making the cut. Most of our
+    // projects are custom; created to the client's specification, and completely
+    // tailored to your liking!`},
+    // {image: this.props.wood_pic, text:`We always have a nice, rotating inventory as well if
+    // you would like to do your own project. We are a full-service wood mill,
+    // and offer planing, sanding, and milling services; collaborating with a local
+    // Master Metalsmith if needed. Feel free to reach out, and let's talk about
+    // your next project!`},
+    
+    // {
+    //     image: <img src={Carousel} />, text: "Project 1"
+    // },
+    // {
+    //     image: <img src={Hooks} />, text: "Project 2"
+    // },
+    // {
+    //     image: <img src={Recursion} />, text: "Project 2"
+    // }
+
+    {
+        image: {Carousel}, text: "Project 1", url: 'https://expenses-tracker-9978b.firebaseapp.com/'
+    },
+    {
+        image: {Hooks}, text: "Project 2", url: 'https://quick--forecast.firebaseapp.com/'
+    },
+    {
+        image: {Recursion}, text: "Project 2"
+    }
+  ]
+
+  render(){
+    return (
+      <div id="Projects" >
+            <div style={{height: '5vh'}}></div>
+            <h2 className="ComponentTitle FontGradient">Projects</h2>
+            <div style={{height: '5vh'}}></div>
+            <ProjectCard data={this.slides[this.state.slideNumber]}></ProjectCard>
+            <IconButton className='slide-button'>
+                <NavigateBeforeRoundedIcon onClick={() => this.moveToPreviousSlide()}></NavigateBeforeRoundedIcon>
+            </IconButton>
+            <IconButton className='slide-button'>
+                <NavigateNextRoundedIcon onClick={() => this.moveToNextSlide()}></NavigateNextRoundedIcon>
+            </IconButton>
+      </div>
+    )
+  };
 }
 
 export default Projects;
-
-
-// import React, {Component} from 'react';
-// import ProjectCard from './ProjectCard';
-// import IconButton from '@material-ui/core/IconButton';
-// import NavigateNextRoundedIcon from '@material-ui/icons/NavigateNextRounded';
-// import NavigateBeforeRoundedIcon from '@material-ui/icons/NavigateBeforeRounded';
-
-// class Projects extends Component {
-
-//   state ={
-//     slideNumber: 0,
-//   }
-
-//   componentDidMount() {
-//     this.kickOffCarousel()
-//   }
-
-//   moveToNextSlide = () => {
-//     this.state.slideNumber === 2 ?
-//     this.resetCarousel()
-//     :
-//     this.setState(prevstate => ({ slideNumber: prevstate.slideNumber + 1}))
-//   }
-
-//   moveToPreviousSlide = () => {
-//     this.state.slideNumber === 0 ?
-//     this.setState({slideNumber: 2})
-//     :
-//     this.setState(prevstate => ({ slideNumber: prevstate.slideNumber - 1}))
-//   }
-
-//   kickOffCarousel = () => {
-//       setInterval(this.moveToNextSlide, 4500)
-//   }
-
-//   resetCarousel = () => {
-//     clearInterval(this.kickOffCarousel)
-//     this.setState({slideNumber: 0})
-//   }
-
-
-//   slides = [
-//     {image: this.props.data.about_image, text:`Thanks for stopping by! We are a small, full service, family-
-//     owned wood business based in Fairfax, California. We specialize in
-//     custom, reclaimed wood projects from sustainable, local sources. It is a
-//     blessing to live in Northern California, with such a wide variety of species.`},
-//     {image: this.props.project_pic, text:`We also specialize in esoteric species from around the world. All of our
-//     wood is one hundred percent reclaimed, and handpicked by our
-//     specialists; only the top twenty percent making the cut. Most of our
-//     projects are custom; created to the client's specification, and completely
-//     tailored to your liking!`},
-//     {image: this.props.wood_pic, text:`We always have a nice, rotating inventory as well if
-//     you would like to do your own project. We are a full-service wood mill,
-//     and offer planing, sanding, and milling services; collaborating with a local
-//     Master Metalsmith if needed. Feel free to reach out, and let's talk about
-//     your next project!`},
-//   ]
-
-//   render(){
-//     return (
-//       <div id="Projects" >
-//             <div style={{height: '5vh'}}></div>
-//             <h2 className="ComponentTitle FontGradient">Projects</h2>
-//             <p className='about-text-welcome'>Welcome!</p>
-//             <AboutCard data={this.slides[this.state.slideNumber]}></AboutCard>
-//             <IconButton className='slide-button'>
-//                 <NavigateBeforeRoundedIcon onClick={() => this.moveToPreviousSlide()}></NavigateBeforeRoundedIcon>
-//             </IconButton>
-//             <IconButton className='slide-button'>
-//                 <NavigateNextRoundedIcon onClick={() => this.moveToNextSlide()}></NavigateNextRoundedIcon>
-//             </IconButton>
-//       </div>
-//     )
-//   };
-// }
-
-// export default Projects;

@@ -29,7 +29,7 @@ function Publications() {
   return (
     <div id="Publications">
         <div style={{height: '5vh'}}></div>
-        <h2 className="ComponentTitle" style={{color: 'black'}}>Publications</h2>
+        <h2 className="ComponentTitle">Publications</h2>
         <div className="PublicationsCardsContainer">
           <div id="Carousel" className="PublicationsCard">
             <div className="LinkIcon">

@@ -14,16 +14,16 @@ function Home() {
         <div id="Home">
             <TypeWriter typing={0.5} onTypingEnd={() => setDisplayHomeParagraph(true)}>
                 Hello
-                <div className="FontGradient"> World!!!</div>
+                <div style={{color: '#ebb216'}}> World!!!</div>
             </TypeWriter>
             <div style={{height: '5vh'}}></div>
             {displayHomeParagraph ? 
                 <div id="HomeParagraph">
                     <div>
                         My name is 
-                        <span style={{color: '#ebb216'}}> JUAN CARLOS MEZA </span>
+                        <span> JUAN CARLOS MEZA </span>
                         and I'm a 
-                        <span style={{color: '#ebb216'}}> JUNIOR FULL-STACK SOFTWARE ENGINEER </span>
+                        <span> FULL-STACK SOFTWARE ENGINEER </span>
                         based in the San Francisco Bay Area currently working at AAK-TELESCIENCE, INC.
                     </div>
                     <div className="SocialMedia">

@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import TypeWriter from "react-typewriter";
 
 
 function About() {

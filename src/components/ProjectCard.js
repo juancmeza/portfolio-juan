@@ -23,7 +23,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     // paddingTop: spacing(2),
     [breakpoints.up('md')]: {
       flexDirection: 'column',
-      maxWidth: '65vw',
+      maxWidth: '60vw',
     //   paddingTop: spacing(2),
     },
   },
@@ -32,7 +32,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     marginLeft: 'auto',
     marginRight: 'auto',
     // marginTop: spacing(-1),
-    paddingBottom: '45%',
+    paddingBottom: '55%',
     borderRadius: '0.9em 0.9em 0 0',
     backgroundColor: '#fff',
     position: 'relative',

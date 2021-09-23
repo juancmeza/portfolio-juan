@@ -37,7 +37,7 @@
 }
 
 #HomeContainer {
-  background-image: url("images/HeaderJuanTwo.jpeg");
+  background-image: url("./components/images/HeaderJuanTwo.jpeg");
   /* background-color: rgba(0, 0, 0, .6);
   background-blend-mode: multiply; */
   width: 100%;
@@ -162,12 +162,31 @@ li{
   /* background: linear-gradient(to left, #051636, #3b79ac); */
 }
 
+#CarouselContainer {
+  border-radius: 0.91em;
+  max-width: 60vw;
+  box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.6);
+  margin: auto;
+}
+
+.slide-button {
+  /* color: white; */
+  background: linear-gradient(rgb(112, 166, 190, 0.6), rgba(130, 130, 130, .5));
+  /* background-color: white; */
+}
+
+.slide-button-in {
+  color: white;
+  /* background: linear-gradient(#444444, #222222);
+  background-color: white; */
+}
+
 #Publications {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("images/Marina.jpeg");
+  background-image: url("./components/images/Marina.jpeg");
   background-attachment: fixed;
   width: 100%;
   background-size: cover;
@@ -270,15 +289,15 @@ li{
 }
 
 #Carousel {
-  background-image: url("images/Carousel.jpeg");
+  background-image: url("./components/images/Carousel.jpeg");
 }
 
 #Recursion {
-  background-image: url("images/Recursion.jpeg");
+  background-image: url("./components/images/Recursion.jpeg");
 }
 
 #Hooks {
-  background-image: url("images/Hooks.jpeg");
+  background-image: url("./components/images/Hooks.jpeg");
 }
 
 /* a.overlay { 
@@ -312,7 +331,7 @@ li{
   }
 
   #HomeContainer {
-    background-image: url("images/Marina.jpeg");
+    background-image: url("./components/images/Marina.jpeg");
   }
 
   #Home {
@@ -321,7 +340,7 @@ li{
   }
 
   #Publications {
-    background-image: url("images/GG-Background.jpeg");
+    background-image: url("./components/images/GG-Background.jpeg");
   }
 
   .PublicationsCardsContainer {

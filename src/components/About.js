@@ -18,7 +18,7 @@ function About() {
                     </li>
                     <li>
                         Spending years studying a subject I was not genuinely passionate about made me realize
-                        the importance of loving what you do and went on to explore the food and beverage industry, where I
+                        the importance of loving what you do and I went on to explore the food and beverage industry, where I
                         found a newly sparked interest in the creative possibilities of the cocktail world.
                     </li>
                     <li>

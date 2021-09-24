@@ -34,7 +34,7 @@ class Projects extends Component {
   }
 
   kickOffCarousel = () => {
-      setInterval(this.moveToNextSlide, 4500)
+      setInterval(this.moveToNextSlide, 8500)
   }
 
   resetCarousel = () => {
@@ -45,30 +45,42 @@ class Projects extends Component {
 
   slides = [
     {
-        image: {Expenses}, text: "Project 1", url: 'https://expenses-tracker-9978b.firebaseapp.com/'
+        image: {Expenses}, 
+        text: `This app allows users to track their expenses and break them down by category aided by an interactive chart. 
+                It is a RESTful API built to practice CRUD operations using Ruby on Rails and Vanilla Javascript.`, 
+        url: 'https://expenses-tracker-9978b.firebaseapp.com/'
     },
     {
-        image: {Forecast}, text: "Project 2", url: 'https://gallant-brown-8fa872.netlify.app/Home'
+        image: {Forecast}, 
+        text: `In addition to retreiving current weather data and weekly forecast for any city, users are able to save 
+                their favorite locations and retreive data for them upon signup, which required proper handling of multiple
+                asynchronous calls and a thourough understanding of React's lifecycle methods.`, 
+        url: 'https://gallant-brown-8fa872.netlify.app/Home'
     },
     {
-        image: {Pawesome}, text: "Project 2", url: 'https://pawsomehiking.firebaseapp.com/'
+        image: {Pawesome}, 
+        text: `Brochure website in progress for an existing dog boarding and hiking business in San Francisco. 
+                Built on Ruby on Rails and React, this website secures users' information through JWT and incorporates
+                Google Maps' API. Currently undergoing improvements for the previous booking method.`, 
+        url: 'https://pawsomehiking.firebaseapp.com/'
     }
   ]
 
   render(){
     return (
       <div id="Projects" >
-            <div style={{height: '5vh'}}></div>
+            <div style={{height: '4vh'}}></div>
             <h2 className="ComponentTitle FontGradient">Projects</h2>
-            <div style={{height: '2vh'}}></div>
+            <div style={{height: '1vh'}}></div>
             <div id="CarouselContainer">
                 <ProjectCard data={this.slides[this.state.slideNumber]}></ProjectCard>
             </div>
-            <IconButton className='slide-button'>
-                <NavigateBeforeRoundedIcon onClick={() => this.moveToPreviousSlide()} className='slide-button-in'></NavigateBeforeRoundedIcon>
+            <br></br>
+            <IconButton onClick={() => this.moveToPreviousSlide()} className='slide-button'>
+                <NavigateBeforeRoundedIcon className='slide-button-in'></NavigateBeforeRoundedIcon>
             </IconButton>
-            <IconButton className='slide-button'>
-                <NavigateNextRoundedIcon onClick={() => this.moveToNextSlide()}></NavigateNextRoundedIcon>
+            <IconButton onClick={() => this.moveToNextSlide()} className='slide-button'>
+                <NavigateNextRoundedIcon className='slide-button-in'></NavigateNextRoundedIcon>
             </IconButton>
       </div>
     )

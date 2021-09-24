@@ -16,6 +16,8 @@
 }
 
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -111,17 +113,14 @@
   -webkit-text-fill-color: transparent;
   display: list-item;
   font-size: x-large;
-  text-align-last: left;
+  text-align: left;
 }
 
 ul{ text-align:center;}
 
 li{ 
-  display:inline-block;
+  display: inline-block;
   padding:15px;
-  /* list-style-position:unset; */
-  /* text-align-last: left; */
-  /* text-indent: -1em; */
 }
 
 #About2 {
@@ -159,20 +158,30 @@ li{
 
 #Projects {
   min-height: 100vh;
+  margin-bottom: 3vh;;
   /* background: linear-gradient(to left, #051636, #3b79ac); */
+}
+
+#Projects p {
+  background: linear-gradient(to right, #a0d0ec, #376ec0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 #CarouselContainer {
   border-radius: 0.91em;
-  max-width: 60vw;
+  max-width: 50vw;
+  height: 73vh;
   box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.6);
   margin: auto;
 }
 
 .slide-button {
-  /* color: white; */
   background: linear-gradient(rgb(112, 166, 190, 0.6), rgba(130, 130, 130, .5));
-  /* background-color: white; */
+  margin: 2px 2px 2px 2px;
 }
 
 .slide-button-in {
@@ -373,5 +382,10 @@ li{
   .TechnicalSkills li {
     line-height: 16px;
     margin: 0;
+  }
+
+  #CarouselContainer {
+    max-width: 90vw;
+    margin-top: -3.5vh;
   }
 }

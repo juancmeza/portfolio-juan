@@ -8,30 +8,29 @@ import CardContent from '@material-ui/core/CardContent';
 
 const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   root: {
+    background: 'rgba(0,0,0,0.5)',
     margin: 'auto',
-    borderRadius: '0.91em', // 16px
+    borderRadius: '0.91em', 
     transition: '0.3s',
     boxShadow: '0px 14px 30px rgba(34, 35, 58, 0.2)',
     position: 'relative',
-    maxWidth: '85vw',
+    maxWidth: '90vw',
+    height: '73vh',
     marginLeft: 'auto',
     overflow: 'initial',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    paddingBottom: spacing(2),
-    // paddingTop: spacing(2),
+    // paddingBottom: spacing(2),
     [breakpoints.up('md')]: {
       flexDirection: 'column',
-      maxWidth: '60vw',
-    //   paddingTop: spacing(2),
+      maxWidth: '50vw',
     },
   },
   media: {
     minWidth: '100%',
     marginLeft: 'auto',
     marginRight: 'auto',
-    // marginTop: spacing(-1),
     paddingBottom: '55%',
     borderRadius: '0.9em 0.9em 0 0',
     backgroundColor: '#fff',
@@ -40,9 +39,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     marginTop: 0,
     [breakpoints.up('md')]: {
       width: '100%',
-    //   marginLeft: spacing(-3),
       marginTop: 0,
-    //   transform: 'translateX(-8px)',
     },
     '&:after': {
       content: '" "',
@@ -50,23 +47,22 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
       top: 0,
       left: 0,
       width: '100%',
-    //   height: '100%',
-    //   borderRadius: spacing(2), // 16
       opacity: 0.9,
     },
   },
   content: {
+    // background: 'rgba(0,0,0,0.5)',
     padding: 9,
     width: '90%',
-    color: 'black',
     textAlign: 'center',
-    fontFamily: "Raleway",
+    fontFamily: "Metal Mania",
     marginTop: -10,
     marginBottom: -10,
     // marginLeft: spacing(2),
-    fontSize: 19,
+    fontSize: '3.0vh',
     [breakpoints.up('md')]: {
         textAlign: 'left',
+        fontSize: 21,
       },
   },
   cta: {

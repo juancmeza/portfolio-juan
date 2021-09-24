@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 
 function About() {
@@ -13,8 +13,8 @@ function About() {
             <div id="About1">
                 <ul>
                     <li>
-                        After leaving my hometown in Mexico at the age of fourteen, I graduated
-                        from UC Berkeley with a degree in Geophysics.
+                        I am a lifelong learner with a great work ethic who immigrated from Mexico at the age of fourteen 
+                        and went on to get a degree in Geophysics from UC Berkeley.
                     </li>
                     <li>
                         Spending years studying a subject I was not genuinely passionate about made me realize
@@ -24,7 +24,7 @@ function About() {
                     <li>
                         7 years later, I knew it was time to seek new challenges and after some exploration,
                         I decided to enroll in Flatiron's Software Engineering bootcamp, where I learned
-                        RESTful APIs, agile development, and most of the skills below.
+                        RESTful APIs, agile development, and many of the technical skills below.
                     </li>
                 </ul>
             </div>

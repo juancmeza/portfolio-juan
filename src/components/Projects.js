@@ -49,21 +49,24 @@ class Projects extends Component {
         image: {Expenses}, 
         text: `This app allows users to track their expenses and break them down by category aided by an interactive chart. 
                 It is a RESTful API built to practice CRUD operations using Ruby on Rails and Vanilla Javascript.`, 
-        url: 'https://expenses-tracker-9978b.firebaseapp.com/'
+        url: 'https://expenses-tracker-9978b.firebaseapp.com/',
+        github: 'https://github.com/juancmeza/expenses_tracker_front'
     },
     {
         image: {Forecast}, 
         text: `In addition to retreiving current weather data and weekly forecast for any city, users are able to save 
                 their favorite locations and retreive data for them upon signup, which required proper handling of multiple
                 asynchronous calls and a thourough understanding of React's lifecycle methods.`, 
-        url: 'https://gallant-brown-8fa872.netlify.app/Home'
+        url: 'https://gallant-brown-8fa872.netlify.app/',
+        github: 'https://github.com/juancmeza/WeatherFront'
     },
     {
         image: {Pawesome}, 
         text: `Brochure website in progress for an existing dog boarding and hiking business in San Francisco. 
                 Built on Ruby on Rails and React, this website secures users' information through JWT and incorporates
                 Google Maps' API. Currently undergoing improvements for the previous booking method.`, 
-        url: 'https://pawsomehiking.firebaseapp.com/'
+        url: 'https://pawsomehiking.firebaseapp.com/',
+        github: 'https://github.com/juancmeza/PawsomeHikingFrontEnd'
     }
   ]
 
@@ -75,11 +78,16 @@ class Projects extends Component {
             <div style={{height: '1vh'}}></div>
             <div id="CarouselContainer">
                 <div className="CarouselLinks">
-                     <a href="https://github.com/juancmeza">
-                            <IconButton>
+                     <a href={this.slides[this.state.slideNumber].github}>
+                            <IconButton className="Github">
                                 <GitHubIcon fontSize="large"></GitHubIcon>
                             </IconButton>
-                        </a>
+                     </a>
+                </div>
+                <div className="SiteLinks">
+                     <a href={this.slides[this.state.slideNumber].url}>
+                        <button>Website</button>
+                     </a>
                 </div>
                 <ProjectCard data={this.slides[this.state.slideNumber]}></ProjectCard>
             </div>

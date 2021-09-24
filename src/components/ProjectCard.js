@@ -4,6 +4,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import IconButton from '@material-ui/core/IconButton';
+
 // import { useOverShadowStyles } from '@mui-treasury/styles/shadow/over';
 
 const useStyles = makeStyles(({ breakpoints, spacing }) => ({
@@ -73,8 +76,6 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
 
 export const ProjectCard = React.memo(function BlogCard({data}) {
   const styles = useStyles();
-//   const shadowStyles = useOverShadowStyles();
-console.log('here', data.text)
 
   return (
     <Card className={cx(styles.root)}>

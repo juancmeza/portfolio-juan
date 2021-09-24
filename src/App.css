@@ -172,11 +172,20 @@ li{
 }
 
 #CarouselContainer {
+  position: relative;
   border-radius: 0.91em;
   max-width: 50vw;
   height: 73vh;
   box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.6);
   margin: auto;
+}
+
+.CarouselLinks {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  color: white;
 }
 
 .slide-button {

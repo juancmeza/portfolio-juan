@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard';
 import IconButton from '@material-ui/core/IconButton';
 import NavigateNextRoundedIcon from '@material-ui/icons/NavigateNextRounded';
 import NavigateBeforeRoundedIcon from '@material-ui/icons/NavigateBeforeRounded';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import Expenses from './images/Expenses.png';
 import Forecast from './images/Forecast.png';
 import Pawesome from './images/Pawesome.png';
@@ -73,6 +74,13 @@ class Projects extends Component {
             <h2 className="ComponentTitle FontGradient">Projects</h2>
             <div style={{height: '1vh'}}></div>
             <div id="CarouselContainer">
+                <div className="CarouselLinks">
+                     <a href="https://github.com/juancmeza">
+                            <IconButton>
+                                <GitHubIcon fontSize="large"></GitHubIcon>
+                            </IconButton>
+                        </a>
+                </div>
                 <ProjectCard data={this.slides[this.state.slideNumber]}></ProjectCard>
             </div>
             <br></br>

@@ -38,6 +38,26 @@
   }
 }
 
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.SocialMedia {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+#HomeParagraph {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
 #HomeContainer {
   background-image: url("./components/images/HeaderJuanTwo.jpeg");
   /* background-color: rgba(0, 0, 0, .6);
@@ -58,6 +78,13 @@
   background-color: rgba(0, 0, 0, .5);
   padding: 10px 5vw 10px 5vw;
   position: relative;
+}
+
+#HomeParagraph {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 #HomeParagraph span {
@@ -85,6 +112,10 @@
   min-height: 100vh;
 }
 
+#About .child {
+  transform: translateX(100%)
+}
+
 #About1 {
   min-height: 25vh;
   width: 65vw;
@@ -92,9 +123,6 @@
   border-radius: 0 0.7em 0.7em 0;
   box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.5);
   padding: 4vh 2vw 2vh 4vw;
-  /* margin-left: -35vw;
-  margin-bottom: 5vh;
-  margin-top: 5vh; */
   margin: 5vh 0 5vh -32vw;
   display: flex;
   flex-direction: column;
@@ -307,7 +335,7 @@ li{
 }
 
 #Footer p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .navbar {
@@ -354,6 +382,10 @@ li{
   left: 0;
   right: 0;
   color: rgb(212, 222, 230, 0.9);
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .ComponentTitle {
@@ -459,6 +491,7 @@ li{
   #About1 {
     width: 85vw;
     margin-left: -15vw;
+    transition: transform 1s ease-in-out;
   }
 
   #About1 li {
@@ -510,4 +543,71 @@ li{
   #ContactText {
     font-size: 20px;
   }
+}
+
+/*  ----------------------------------------------- IPADS  ----------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-device-width: 1024px) {
+
+  #Home {
+    min-height: 45vh;
+    /* font-size: x-large; */
+  }
+
+  #About2 {
+    /* width: 85vw;
+    margin-right: -15vw; */
+    min-height: 250px;
+  }
+
+  #CarouselContainer {
+    /* max-width: 60vw; */
+    /* height: 50vh; */
+    font-size: xx-large;
+
+  }
+
+  .PublicationsCardsContainer {
+    flex-direction: column;
+  }
+
+  .PublicationsCard {
+    min-width: 86%;
+    margin-bottom: 20px;
+  }
+
+  #ContactContainer {
+    min-height: 250px;
+    /* width: 50vw; */
+  }
+}
+
+/*  ----------------------------------------------- SURFACE DUO  ----------------------------------------------*/
+
+@media only screen and (min-width: 540px) and (max-device-width: 767px) {
+
+  #Home {
+    font-size: x-large;
+  }
+
+  #CarouselContainer {
+    max-width: 60vw;
+    min-height: 73vh;
+
+  }
+
+  .PublicationsCardsContainer {
+    flex-direction: column;
+  }
+
+  .PublicationsCard {
+    min-width: 86%;
+    margin-bottom: 20px;
+  }
+
+  #ContactContainer {
+    /* min-height: 50vh; */
+    width: 50vw;
+  }
+
 }

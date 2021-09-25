@@ -1,5 +1,6 @@
 import React from 'react';
-import ContactIcons from './ContactIcons.js'
+import ContactIcons from './ContactIcons.js';
+import Footer from './Footer.js';
 
 function Contact() {
   return (
@@ -16,6 +17,7 @@ function Contact() {
             </div>
             <ContactIcons></ContactIcons>
         </div>
+        <Footer></Footer>
     </div>
   );
 }

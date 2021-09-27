@@ -192,9 +192,9 @@ li{
   font-size: x-large;
 }
 
-.TechnicalSkills li {
+.TechnicalSkills p {
   line-height: 8px;
-  margin: 0;
+  /* margin: 0; */
 }
 
 #Projects {
@@ -228,10 +228,11 @@ li{
   z-index: 1000;
 }
 
-.SiteLinks button {
+.SiteLinks p {
   position: absolute;
-  bottom: 22px;
+  bottom: 6px;
   right: 85px;
+  width: 72px;
   z-index: 1000;
   /* color: white; */
   font-family: 'Metal Mania';
@@ -244,11 +245,13 @@ li{
   -webkit-text-fill-color: transparent;
   border-radius: 0.91em;
   box-shadow: 2px 2px 5px 2px rgb(112, 166, 190, 0.6);
+  border: solid #C0C0C0;
+  border-width: 0.5px 0 0 0.5px;
 }
 
-.SiteLinks button:hover {
+.SiteLinks p:hover {
   font-size: 20px;
-  bottom: 24px;
+  bottom: 8px;
 }
 
 .Github {
@@ -256,7 +259,7 @@ li{
 }
 
 .Github:hover {
-  bottom: 2px;
+  bottom: 3px;
 }
 
 /* #SiteLinks a {
@@ -545,9 +548,9 @@ li{
     margin-top: -3.5vh;
   }
 
-  .SiteLinks button {
+  .SiteLinks p {
     left: 8px;
-    bottom: 8px; 
+    bottom: -8px; 
   }
 
   .Github {

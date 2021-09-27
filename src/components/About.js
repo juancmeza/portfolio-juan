@@ -31,31 +31,31 @@ function About() {
             <div id="About2">
                 <div className="TechnicalSkills">
                     <h3>Languages</h3>
-                    <li>Javascript</li>
-                    <li>Ruby</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>PHP</li>
+                    <p>Javascript</p>
+                    <p>Ruby</p>
+                    <p>Python</p>
+                    <p>SQL</p>
+                    <p>PHP</p>
                     {/* <li>R</li> */}
-                    <li>HTML5</li>
-                    <li>CSS3</li>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
                 </div>
                 <div className="TechnicalSkills">
                     <h3>Frameworks</h3>
-                    <li>React</li>
-                    <li>Ruby on Rails</li>
-                    <li>Bootstrap</li>
-                    <li>Material UI</li>
-                    <li>Semantic UI</li>
+                    <p>React</p>
+                    <p>Ruby on Rails</p>
+                    <p>Bootstrap</p>
+                    <p>Material UI</p>
+                    <p>Semantic UI</p>
                 </div>
                 <div className="TechnicalSkills">
                     <h3>Other</h3>
-                    <li>RSpec</li>
-                    <li>Jest</li>
-                    <li>Heroku</li>
-                    <li>Firebase</li>
-                    <li>Netlify</li>
-                    <li>Postman</li>
+                    <p>RSpec</p>
+                    <p>Jest</p>
+                    <p>Heroku</p>
+                    <p>Firebase</p>
+                    <p>Netlify</p>
+                    <p>Postman</p>
                 </div>
             </div>
         </div>

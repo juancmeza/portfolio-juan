@@ -86,7 +86,7 @@ class Projects extends Component {
                 </div>
                 <div className="SiteLinks">
                      <a href={this.slides[this.state.slideNumber].url}>
-                        <button>Website</button>
+                        <p>Website</p>
                      </a>
                 </div>
                 <ProjectCard data={this.slides[this.state.slideNumber]}></ProjectCard>

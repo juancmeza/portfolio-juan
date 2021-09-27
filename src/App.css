@@ -192,10 +192,25 @@ li{
   font-size: x-large;
 }
 
-.TechnicalSkills p {
+.TechnicalSkills li {
   line-height: 8px;
-  /* margin: 0; */
+  margin: 0;
+  background: linear-gradient(to right, #a0d0ec, #376ec0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
+
+/* .TechnicalSkills h3 {
+  background: linear-gradient(to right, #a0d0ec, #376ec0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+} */
 
 #Projects {
   min-height: 100vh;

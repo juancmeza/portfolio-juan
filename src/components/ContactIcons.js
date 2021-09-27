@@ -31,11 +31,11 @@ function ContactIcons() {
                 <LinkedInIcon fontSize="large"></LinkedInIcon>
             </IconButton>
         </a>
-        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=jcmezadev@gmail.com">
+        {/* <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=jcmezadev@gmail.com">
             <IconButton className={styles.action}>
                 <EmailIcon fontSize="large"></EmailIcon>
             </IconButton>
-        </a>
+        </a> */}
     </div>
   );
 }

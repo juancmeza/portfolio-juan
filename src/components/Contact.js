@@ -13,7 +13,7 @@ function Contact() {
               Do you think I would be a good fit for your team?
             </div>
             <div id="ContactText">
-              Let's connect on LinkedIn or shoot me an email.
+              Let's connect on LinkedIn!
             </div>
             <ContactIcons></ContactIcons>
         </div>

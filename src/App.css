@@ -338,6 +338,7 @@ li{
 
 .ContactIcons {
   margin-top: 2vh;
+  z-index: 900;
 }
 
 #Footer {

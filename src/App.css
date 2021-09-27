@@ -183,12 +183,12 @@ li{
 .TechnicalSkills {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right, #a0d0ec, #376ec0);
+  /* background: linear-gradient(to right, #a0d0ec, #376ec0);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   font-size: x-large;
 }
 

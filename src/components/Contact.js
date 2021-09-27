@@ -10,7 +10,7 @@ function Contact() {
         <div id="ContactContainer">
             <div id="ProfilePicture"></div>
             <div id="ContactText">
-              Do you think I would be a good fit for your team?
+              Do you have any questions for me?
             </div>
             <div id="ContactText">
               Let's connect on LinkedIn!

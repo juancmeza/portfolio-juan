@@ -18,18 +18,18 @@ function About() {
                     </li>
                     <li>
                         Spending years studying a subject I was not genuinely passionate about made me realize
-                        the importance of loving what you do and I went on to explore the food and beverage industry, where I
+                        the importance of loving what you do and I decided to explore the food and beverage industry, where I
                         found a newly sparked interest in the creative possibilities of the cocktail world.
                     </li>
                     <li>
-                        7 years later, I knew it was time to seek new challenges and after some exploration,
+                        7 years later, I knew it was time to seek new challenges, and after some exploration,
                         I decided to enroll in Flatiron's Software Engineering bootcamp, where I learned
                         RESTful APIs, agile development, and many of the technical skills below.
                     </li>
                 </ul>
             </div>
             <div id="About2">
-                <div className="TechnicalSkills">
+                <div className="TechnicalSkills FontGradient" >
                     <h3>Languages</h3>
                     <p>Javascript</p>
                     <p>Ruby</p>
@@ -40,7 +40,7 @@ function About() {
                     <p>HTML5</p>
                     <p>CSS3</p>
                 </div>
-                <div className="TechnicalSkills">
+                <div className="TechnicalSkills FontGradient">
                     <h3>Frameworks</h3>
                     <p>React</p>
                     <p>Ruby on Rails</p>
@@ -48,7 +48,7 @@ function About() {
                     <p>Material UI</p>
                     <p>Semantic UI</p>
                 </div>
-                <div className="TechnicalSkills">
+                <div className="TechnicalSkills FontGradient">
                     <h3>Other</h3>
                     <p>RSpec</p>
                     <p>Jest</p>

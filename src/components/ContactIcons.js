@@ -26,7 +26,7 @@ function ContactIcons() {
 
   return (
     <div className="ContactIcons">
-        <a href="https://www.linkedin.com/in/juan-meza-36065974/">
+        <a href="https://www.linkedin.com/in/juan-carlos-meza-dev/">
             <IconButton className={styles.action}>
                 <LinkedInIcon fontSize="large"></LinkedInIcon>
             </IconButton>

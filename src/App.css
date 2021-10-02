@@ -61,6 +61,7 @@
   100% {opacity: 1;}
 }
 
+
 .SocialMedia {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -107,6 +108,10 @@
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
+}
+
+#HomeIntro {
+  display: inline;
 }
 
 #AboutContainer {

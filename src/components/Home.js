@@ -19,7 +19,7 @@ function Home() {
             <div style={{height: '5vh'}}></div>
             {displayHomeParagraph ? 
                 <div id="HomeParagraph">
-                    <div>
+                    <div id="HomeIntro">
                         My name is 
                         <span> JUAN CARLOS MEZA </span>
                         and I'm a 

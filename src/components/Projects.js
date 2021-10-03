@@ -57,7 +57,7 @@ class Projects extends Component {
         text: `In addition to retreiving current weather data and weekly forecast for any city, users are able to save 
                 their favorite locations and retreive data for them upon signup, which required proper handling of multiple
                 asynchronous calls and a thourough understanding of React's lifecycle methods.`, 
-        url: 'https://gallant-brown-8fa872.netlify.app/',
+        url: 'https://quick--forecast.web.app/Home',
         github: 'https://github.com/juancmeza/WeatherFront'
     },
     {

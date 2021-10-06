@@ -17,6 +17,7 @@ function App() {
       <Nav></Nav>
       <Home></Home>
       <About></About>
+      <div className="Divider"></div>
       <Projects></Projects>
       <Publications></Publications>
       <Contact></Contact>

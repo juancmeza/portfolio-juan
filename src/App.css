@@ -217,6 +217,14 @@ li{
   -webkit-text-fill-color: transparent;
 } */
 
+.Divider {
+  width: 100vw;
+  height: 10vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 #Projects {
   min-height: 100vh;
   margin-bottom: 3vh;;

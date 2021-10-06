@@ -18,6 +18,7 @@ function App() {
       <Home></Home>
       <About></About>
       <div className="Divider"></div>
+      <div className="Divider2"></div>
       <Projects></Projects>
       <Publications></Publications>
       <Contact></Contact>

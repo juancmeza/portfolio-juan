@@ -118,6 +118,7 @@
   width: 100%;
   min-height: 100vh;
   /* box-shadow: 0 5px 10px rgb(42, 41, 41); */
+  overflow-x: hidden;
 }
 
 #About {
@@ -219,10 +220,24 @@ li{
 
 .Divider {
   width: 100vw;
-  height: 10vh;
+  height: 50vh;
+  margin-top: 5vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: url('./components/images/layered1.svg');
+  opacity: 0.4;
+}
+
+.Divider2 {
+  width: 100vw;
+  height: 40vh;
+  margin-top: -20vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('./components/images/layered2.svg');
+  opacity: 0.8;
 }
 
 #Projects {
@@ -570,6 +585,18 @@ li{
     line-height: 16px;
     margin: 0;
   }
+
+  .Divider {
+  opacity: 0.6;
+  margin-top: -5vh;
+  overflow-x: hidden;
+}
+
+  .Divider2 {
+  margin-bottom: -20vh;
+  overflow-x: hidden;
+
+}
 
   #CarouselContainer {
     max-width: 90vw;

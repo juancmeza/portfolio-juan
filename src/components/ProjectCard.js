@@ -52,14 +52,13 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     },
   },
   content: {
-    // background: 'rgba(0,0,0,0.5)',
+    display: 'flex',
     padding: 9,
     width: '90%',
     textAlign: 'center',
     fontFamily: "Metal Mania",
     marginTop: -10,
     marginBottom: -10,
-    // marginLeft: spacing(2),
     fontSize: '3.0vh',
     [breakpoints.up('md')]: {
         textAlign: 'left',

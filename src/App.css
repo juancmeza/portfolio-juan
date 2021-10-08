@@ -343,6 +343,19 @@ li{
   position: relative;
 }
 
+#ContactBackground {
+  background-image: url("./components/images/blob-scene-haikei.svg");
+  background-size: cover;
+  background-position: center top;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  /* z-index: -1; */
+
+}
+
 #ContactContainer {
   min-height: 50vh;
   width: 40vw;

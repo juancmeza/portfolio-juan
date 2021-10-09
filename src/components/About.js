@@ -7,13 +7,14 @@ function About() {
 
   return (
     <div id="AboutContainer">
+        <div id="AboutBackground"></div>
         <div style={{height: '5vh'}}></div>
         <h2 className="ComponentTitle FontGradient">About Me</h2>
         <div id="About">
             <div id="About1">
                 <ul>
                     <li>
-                        I am a lifelong learner with a great work ethic who immigrated from Mexico at the age of fourteen 
+                        I am a lifelong learner with a great work ethic who immigrated from Mexico at the age of fourteen
                         and went on to get a degree in Geophysics from UC Berkeley.
                     </li>
                     <li>

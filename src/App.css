@@ -119,6 +119,18 @@
   min-height: 100vh;
   /* box-shadow: 0 5px 10px rgb(42, 41, 41); */
   overflow-x: hidden;
+  position: relative;
+}
+
+#AboutBackground {
+  background-image: url("./components/images/layered-peaks.svg");
+  background-size: cover;
+  background-position: center top;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
 }
 
 #About {
@@ -165,7 +177,7 @@
 
 ul{ text-align:center;}
 
-li{ 
+li{
   display: inline-block;
   padding:15px;
 }
@@ -352,8 +364,6 @@ li{
   height: 100%;
   width: 100%;
   opacity: 0.2;
-  /* z-index: -1; */
-
 }
 
 #ContactContainer {
@@ -524,10 +534,10 @@ li{
   background-image: url("./components/images/Hooks.jpeg");
 }
 
-/* a.overlay { 
-  width: 100%; 
-  height:100%; 
-  position: absolute; 
+/* a.overlay {
+  width: 100%;
+  height:100%;
+  position: absolute;
 } */
 
 .LinkIcon {
@@ -619,7 +629,7 @@ li{
 
   .SiteLinks p {
     left: 8px;
-    bottom: -8px; 
+    bottom: -8px;
   }
 
   .Github {

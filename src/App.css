@@ -16,7 +16,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-fadeIn infinite 2s linear;
+    animation: App-logo-fadeIn infinite 2.5s linear;
   }
 
   #Title {
@@ -389,7 +389,7 @@ li{
 }
 
 #Contact h2 {
-  z-index: 100;
+  z-index: 1000;
 }
 
 #ContactBackground {
@@ -400,13 +400,13 @@ li{
   top: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 #ContactContainer {
   min-height: 50vh;
   width: 30vw;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 0.7em;
   box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.5);
   margin: auto;
@@ -671,6 +671,10 @@ li{
     box-shadow: none;
     bottom: -14px;
     right: -14px;
+  }
+
+  #ContactBackground {
+    background-image: url("./components/images/stacked-waves2.svg");
   }
 
   #ContactContainer {

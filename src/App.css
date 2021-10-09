@@ -150,7 +150,7 @@
 #About1 {
   min-height: 25vh;
   width: 65vw;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 0 0.7em 0.7em 0;
   box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.5);
   padding: 4vh 2vw 2vh 4vw;
@@ -230,6 +230,16 @@ li{
   -webkit-text-fill-color: transparent;
 } */
 
+/* .Divider0 {
+  width: 100vw;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('./components/images/stacked-peaks.svg');
+  opacity: 0.4;
+} */
+
 .Divider {
   width: 100vw;
   height: 50vh;
@@ -256,6 +266,18 @@ li{
   min-height: 100vh;
   margin-bottom: 3vh;;
   /* background: linear-gradient(to left, #051636, #3b79ac); */
+  position: relative;
+}
+
+#ProjectsBackground {
+  background-image: url("./components/images/polygon-scatter.svg");
+  background-size: cover;
+  background-position: center top;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
 }
 
 #Projects p {
@@ -363,7 +385,7 @@ li{
   top: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 #ContactContainer {

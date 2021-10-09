@@ -46,25 +46,25 @@ class Projects extends Component {
 
   slides = [
     {
-        image: {Expenses}, 
-        text: `This app allows users to track their expenses and break them down by category aided by an interactive chart. 
-                It is a RESTful API built to practice CRUD operations using Ruby on Rails and Vanilla Javascript.`, 
+        image: {Expenses},
+        text: `This app allows users to track their expenses and break them down by category aided by an interactive chart.
+                It is a RESTful API built to practice CRUD operations using Ruby on Rails and Vanilla Javascript.`,
         url: 'https://expenses-tracker-9978b.firebaseapp.com/',
         github: 'https://github.com/juancmeza/expenses_tracker_front'
     },
     {
-        image: {Forecast}, 
-        text: `In addition to retreiving current weather data and weekly forecast for any city, users are able to save 
+        image: {Forecast},
+        text: `In addition to retreiving current weather data and weekly forecast for any city, users are able to save
                 their favorite locations and retreive data for them upon signup, which required proper handling of multiple
-                asynchronous calls and a thourough understanding of React's lifecycle methods.`, 
+                asynchronous calls and a thourough understanding of React's lifecycle methods.`,
         url: 'https://quick--forecast.web.app/Home',
         github: 'https://github.com/juancmeza/WeatherFront'
     },
     {
-        image: {Pawesome}, 
-        text: `Brochure website in progress for an existing dog boarding and hiking business in San Francisco. 
+        image: {Pawesome},
+        text: `Brochure website in progress for an existing dog boarding and hiking business in San Francisco.
                 Built on Ruby on Rails and React, this website secures users' information through JWT and incorporates
-                Google Maps' API. Currently undergoing improvements for the previous booking method.`, 
+                Google Maps' API. Currently undergoing improvements for the previous booking method.`,
         url: 'https://pawsomehiking.firebaseapp.com/',
         github: 'https://github.com/juancmeza/PawsomeHikingFrontEnd'
     }
@@ -73,6 +73,7 @@ class Projects extends Component {
   render(){
     return (
       <div id="Projects" >
+            <div id="ProjectsBackground"></div>
             <div style={{height: '4vh'}}></div>
             <h2 className="ComponentTitle FontGradient">Projects</h2>
             <div style={{height: '1vh'}}></div>

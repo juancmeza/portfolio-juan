@@ -16,9 +16,9 @@ function App() {
       <div className="App-logo"></div>
       <Nav></Nav>
       <Home></Home>
-      <About></About>
       <div className="Divider"></div>
       <div className="Divider2"></div>
+      <About></About>
       <Projects></Projects>
       <Publications></Publications>
       <Contact></Contact>

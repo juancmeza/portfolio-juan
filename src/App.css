@@ -230,15 +230,16 @@ li{
   -webkit-text-fill-color: transparent;
 } */
 
-/* .Divider0 {
+.Divider0 {
   width: 100vw;
-  height: 50vh;
+  height: 70vh;
+  padding-top: -30vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url('./components/images/stacked-peaks.svg');
-  opacity: 0.4;
-} */
+  opacity: 0.3;
+}
 
 .Divider {
   width: 100vw;
@@ -264,7 +265,7 @@ li{
 
 #Projects {
   min-height: 100vh;
-  margin-bottom: 3vh;;
+  margin-top: 3vh;;
   /* background: linear-gradient(to left, #051636, #3b79ac); */
   position: relative;
 }
@@ -377,8 +378,12 @@ li{
   position: relative;
 }
 
+#Contact h2 {
+  z-index: 100;
+}
+
 #ContactBackground {
-  background-image: url("./components/images/blob-scene-haikei.svg");
+  background-image: url("./components/images/stacked-waves.svg");
   background-size: cover;
   background-position: center top;
   position: absolute;
@@ -390,7 +395,7 @@ li{
 
 #ContactContainer {
   min-height: 50vh;
-  width: 40vw;
+  width: 30vw;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.7em;
   box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.5);
@@ -576,6 +581,7 @@ li{
 }
 
 /*  ----------------------------------------------- MOBILE DEVICES ----------------------------------------------*/
+
 @media only screen and (min-width: 320px) and (max-device-width: 480px) {
 
   .navbar {
@@ -593,6 +599,10 @@ li{
   #Home {
     font-size: 3.5vh;
     min-height: 60vh;
+  }
+
+  #Projects {
+    margin-bottom: 5vh;;
   }
 
   #Publications {
@@ -632,17 +642,10 @@ li{
     margin: 0;
   }
 
-  .Divider {
-  opacity: 0.6;
-  margin-top: -5vh;
-  overflow-x: hidden;
-}
-
-  .Divider2 {
-  margin-bottom: -20vh;
-  overflow-x: hidden;
-
-}
+  .Divider0 {
+    height: 80vh;
+    background-image: url("./components/images/stacked-peaks2.svg");
+  }
 
   #CarouselContainer {
     max-width: 90vw;

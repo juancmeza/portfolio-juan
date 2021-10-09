@@ -16,11 +16,15 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-fadeIn infinite 3s linear;
+    animation: App-logo-fadeIn infinite 2s linear;
   }
 
   #Title {
-    animation: Title-fadeIn infinite 3s linear;
+    animation: Title-fadeIn infinite 2.5s linear;
+  }
+
+  #ContactContainer {
+    animation: ContactContainer-fadeIn infinite 2s linear;
   }
 }
 
@@ -49,6 +53,12 @@
   0% {opacity: 1;}
   50% {opacity: 0.5;}
   100% {opacity: 1;}
+}
+
+@keyframes ContactContainer-fadeIn {
+  0% {box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.7);}
+  50% {box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.2);}
+  100% {box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.7);}
 }
 
 @-webkit-keyframes fadeIn {

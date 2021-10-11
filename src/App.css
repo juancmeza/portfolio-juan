@@ -243,11 +243,11 @@ li{
 .Divider0 {
   width: 100vw;
   height: 70vh;
-  padding-top: -30vh;
+  /* padding-top: -40vh; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url('./components/images/stacked-peaks.svg');
+  background-image: url('./components/images/layered-peaks2.svg');
   opacity: 0.3;
 }
 
@@ -284,6 +284,7 @@ li{
   background-image: url("./components/images/polygon-scatter.svg");
   background-size: cover;
   background-position: center top;
+  background-attachment: fixed;
   position: absolute;
   top: 0;
   height: 100%;
@@ -396,6 +397,7 @@ li{
   background-image: url("./components/images/stacked-waves.svg");
   background-size: cover;
   background-position: center top;
+  background-attachment: fixed;
   position: absolute;
   top: 0;
   height: 100%;

@@ -292,6 +292,10 @@ li{
   opacity: 0.5;
 }
 
+#Projecs h2 {
+  z-index: 1001;
+}
+
 #Projects p {
   background: linear-gradient(to right, #a0d0ec, #376ec0);
   background-clip: text;
@@ -408,7 +412,7 @@ li{
 #ContactContainer {
   min-height: 50vh;
   width: 30vw;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.7em;
   box-shadow: 5px 5px 15px 5px rgb(112, 166, 190, 0.5);
   margin: auto;

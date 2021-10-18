@@ -8,6 +8,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Expenses from './images/Expenses.png';
 import Forecast from './images/Forecast.png';
 import Pawesome from './images/Pawesome.png';
+import IronHorse from './images/IronHorse.png';
 
 
 class Projects extends Component {
@@ -21,7 +22,7 @@ class Projects extends Component {
   }
 
   moveToNextSlide = () => {
-    this.state.slideNumber === 2 ?
+    this.state.slideNumber === 3 ?
     this.resetCarousel()
     :
     this.setState(prevstate => ({ slideNumber: prevstate.slideNumber + 1}))
@@ -29,7 +30,7 @@ class Projects extends Component {
 
   moveToPreviousSlide = () => {
     this.state.slideNumber === 0 ?
-    this.setState({slideNumber: 2})
+    this.setState({slideNumber: 3})
     :
     this.setState(prevstate => ({ slideNumber: prevstate.slideNumber - 1}))
   }
@@ -61,10 +62,17 @@ class Projects extends Component {
         github: 'https://github.com/juancmeza/WeatherFront'
     },
     {
+      image: {IronHorse},
+      text: `Contributed in the development of a brochure and admin website for a small local business using Ruby on Rails,
+              React, Material UI, custom CSS, and Yelp's API.`,
+      url: 'https://ironhorsestudio.net/',
+      github: 'https://github.com/okorkov/iron-horse'
+    },
+    {
         image: {Pawesome},
-        text: `Brochure website in progress for an existing dog boarding and hiking business in San Francisco.
+        text: `Brochure website in progress for a dog boarding business model.
                 Built on Ruby on Rails and React, this website secures users' information through JWT and incorporates
-                Google Maps' API. Currently undergoing improvements for the previous booking method.`,
+                Google Maps' API. Currently undergoing a major revamp.`,
         url: 'https://pawsomehiking.firebaseapp.com/',
         github: 'https://github.com/juancmeza/PawsomeHikingFrontEnd'
     }

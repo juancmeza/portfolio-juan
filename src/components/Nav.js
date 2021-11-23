@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "reactjs-navbar";
 import Loader from "react-loader-spinner";
 import {
-  faHome,  
+  faHome,
   faUserCircle,
   faNewspaper,
   faHammer,
@@ -15,7 +15,7 @@ class Nav extends Component {
   state = {
     isLoading: false,
   };
- 
+
   render() {
 
     return (
@@ -55,7 +55,7 @@ class Nav extends Component {
               title: "Publications",
               icon: faNewspaper,
               isAuth: true,
-              onClick: () => { 
+              onClick: () => {
                 window.location.href = "#Publications";
               },
             },
@@ -63,7 +63,7 @@ class Nav extends Component {
               title: "Contact",
               icon: faEnvelopeOpen,
               isAuth: true,
-              onClick: () => { 
+              onClick: () => {
                 window.location.href = "#Contact";
               },
             },

@@ -17,13 +17,20 @@ function Home() {
                 <div style={{color: '#ebb216'}}> World!!!</div>
             </TypeWriter>
             <div style={{height: '5vh'}}></div>
-            {displayHomeParagraph ? 
+            {displayHomeParagraph ?
                 <div id="HomeParagraph">
                     <div id="HomeIntro">
-                        My name is 
+                        My name is
                         <span> JUAN CARLOS MEZA </span>
-                        and I'm a 
+                        and I'm a
                         <span> FULL-STACK SOFTWARE ENGINEER </span>
+                        based in the San Francisco Bay Area currently working at AAK-TELESCIENCE, INC.
+                    </div>
+                    <div id="HomeIntroMobile">
+                        My name is
+                        JUAN CARLOS MEZA
+                        and I'm a
+                        FULL-STACK SOFTWARE ENGINEER
                         based in the San Francisco Bay Area currently working at AAK-TELESCIENCE, INC.
                     </div>
                     <div className="SocialMedia">

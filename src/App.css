@@ -124,6 +124,10 @@
   display: inline;
 }
 
+#HomeIntroMobile {
+  display: none;
+}
+
 #AboutContainer {
   width: 100%;
   min-height: 100vh;
@@ -617,6 +621,20 @@ li{
     min-height: 60vh;
   }
 
+  #HomeIntroMobile {
+    display: inline;
+    background: linear-gradient(to right, #e9be31, #d48e0c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #HomeIntro {
+    display: none;
+  }
+
   #Projects {
     margin-bottom: 5vh;;
   }
@@ -717,6 +735,20 @@ li{
     /* font-size: x-large; */
   }
 
+  #HomeIntroMobile {
+    display: inline;
+    background: linear-gradient(to right, #e9be31, #d48e0c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #HomeIntro {
+    display: none;
+  }
+
   #About2 {
     /* width: 85vw;
     margin-right: -15vw; */
@@ -759,6 +791,20 @@ li{
 
   #Home {
     font-size: x-large;
+  }
+
+  #HomeIntroMobile {
+    display: inline;
+    background: linear-gradient(to right, #e9be31, #d48e0c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #HomeIntro {
+    display: none;
   }
 
   #CarouselContainer {

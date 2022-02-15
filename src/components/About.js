@@ -3,7 +3,11 @@ import React from 'react';
 
 function About() {
 
-//---------------------------------------- Set State -------------------------------------------
+  const aboutAnimated = document.querySelectorAll(".AboutAnimated")
+
+  const observer = new IntersectionObserver(entries=> {
+    console.log(entries)
+  })
 
   return (
     <div id="AboutContainer">
@@ -11,7 +15,7 @@ function About() {
         <div style={{height: '5vh'}}></div>
         <h2 className="ComponentTitle FontGradient">About Me</h2>
         <div id="About">
-            <div id="About1">
+            <div id="About1" className='AboutAnimated'>
                 <ul>
                     <li>
                         I am a lifelong learner with a great work ethic who immigrated from Mexico at the age of fourteen
@@ -29,7 +33,7 @@ function About() {
                     </li>
                 </ul>
             </div>
-            <div id="About2">
+            <div id="About2" className='AboutAnimated'>
                 <div className="TechnicalSkills">
                     <h3 className="FontGradient">Languages</h3>
                     <li>Javascript</li>
